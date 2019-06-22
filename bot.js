@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['ahelp','Type ahelp',' help'];
+    var setGame = ['#help'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -46,7 +46,7 @@ client.on('ready', function(){
             j = -1;
         }
         i = i+j;
-        client.user.setGame(setGame[i],`http://www.twitch.tv/barontube`);
+        client.user.setGame(setGame[i],`https://www.youtube.com/channel/UCd47K81TYnq3-yDn2sDN9rw?view_as=subscriber`);
     }, ms);
     console.log(` ????????? |> Name: ${client.user.username}`);
  console.log(` ????????? |> Servers: ${client.guilds.size}`);
